@@ -1,0 +1,32 @@
+		<div class="container" id="portfolio" name="portfolio">
+		<br>
+			<div class="row">
+				<br>
+				<h1 class="centered">LES RECUEILS</h1>
+				<hr>
+			</div><!-- /row -->
+			<div class="container">
+			<div class="row">	
+			 
+				
+				<!-- PORTFOLIO IMAGE 3 -->
+				<% @recueils.each do |recueil| %>
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							
+							<%= image_tag("#{recueil.picture}", class: 'img-responsive')%>
+							<figcaption>
+								<h5><%= recueil.title %></h5>
+								<a data-toggle="modal" href="/shop/products/<%= recueil.text %>" class="btn btn-primary btn-lg">En savoir plus</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+			<%end%>
+			</div><!-- /row -->
+			
+			<br>
+			<br>
+		</div><!-- /row -->
+	</div><!-- /container -->

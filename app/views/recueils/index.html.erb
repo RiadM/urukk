@@ -1,0 +1,21 @@
+
+<h1>Listing recueils</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @recueils.each do |recueil| %>
+    <tr>
+      <td><%= recueil.title %></td>
+      <td><%= recueil.text %></td>
+      <td><%= link_to 'Show'    , recueil_path(recueil) %></td>
+      <td><%= link_to 'Update'  , recueil_path(recueil) %></td>
+      <td><%= link_to 'Delete'  , recueil_path(recueil),
+                                method: :delete,
+                                data: {confirm: 'Sure?'}%></td>
+    </tr>
+  <% end %>
+</table>

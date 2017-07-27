@@ -1,0 +1,20 @@
+<h1>SHOW</h1>
+<p>
+  <strong>Title:</strong>
+  <%= @recueil.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @recueil.text %>
+</p>
+<p>
+	<strong>Prix:</strong>
+	<%= @recueil.price%>
+</p>
+
+<p>
+	
+	
+	<%= image_tag @recueil.picture.url if @recueil.picture? %>
+</p>

@@ -1,0 +1,30 @@
+<!-- ==== PORTFOLIO ==== -->
+		<div class="container" id="portfolio" name="portfolio">
+		<br>
+			<div class="row">
+				
+				<br>
+			</div><!-- /row -->
+			<div class="container">
+			<div class="row">	
+			 <% @recueils.each do |recueil| %>
+				
+				<!-- PORTFOLIO IMAGE 3 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/uruk/resilience.png" alt="">
+							<figcaption>
+								<h5>LE CONTROLE</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">En savoir plus</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+			
+			<br>
+			<br>
+			<%end%>
+		</div><!-- /row -->
+	</div><!-- /container -->

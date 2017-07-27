@@ -1,0 +1,2 @@
+module RecueilsHelper
+end
