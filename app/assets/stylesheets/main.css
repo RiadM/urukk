@@ -279,7 +279,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-    background: image-url('section/mtroyal.jpg') no-repeat center top;
+    background: url('section/mtroyal.jpg') no-repeat center top;
     margin-top: -50px;
     padding-top:120px;
     text-align:center;

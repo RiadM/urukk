@@ -1,18 +1,18 @@
  <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+         <figure id="logo" class="logo"><%= image_tag(asset_path('logo/logo.png'), class: 'img-responsive')%></figure>
         </button>
-        <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
+        <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="logo" style="font-size:18px; color:#3498db;"></span></a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li> <%= link_to "Accueil",root_path , :class => "smoothScroll"%></li>
-      		<li> <%= link_to "Concept", root_path(:anchor => "concept") %></li> 
-      		<li> <%= link_to "Recueils", root_path(:anchor => 'portfolio')%></li>
-      		<li> <%= link_to "Contact", root_path(:anchor => "contact")%></li>
-          
+          <li> <%= link_to "Accueil"  ,main_app.root_path,:class => "smoothScroll" %> </li>
+      		<li> <%= link_to "Concept"  ,main_app.root_path(:anchor => "concept")    %> </li> 
+      		<li> <%= link_to "Recueils" ,main_app.root_path(:anchor => 'portfolio')  %> </li>
+      		<li> <%= link_to "Contact"  ,main_app.root_path(:anchor => "contact")    %> </li>
+<!--           <li> <%= link_to "Magasin"  ,"/shop"                            %> </li> -->
         </ul>
       </div><!--/.nav-collapse -->
     </div>

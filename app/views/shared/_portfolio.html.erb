@@ -1,29 +1,124 @@
+<br>
+<div class="row">
+	<br>
+	<h1 class="centered">LES RECUEILS</h1>
+	<hr>
+</div><!-- /row -->
+
+
+		
+
+		
+		
+		<!-- ==== PORTFOLIO ==== -->
 		<div class="container" id="portfolio" name="portfolio">
 		<br>
 			<div class="row">
+				
 				<br>
-				<h1 class="centered">LES RECUEILS</h1>
-				<hr>
 			</div><!-- /row -->
 			<div class="container">
 			<div class="row">	
-			 
-				
-				<!-- PORTFOLIO IMAGE 3 -->
-				<% @recueils.each do |recueil| %>
-				<div class="col-md-4">
+			
+				<!-- PORTFOLIO IMAGE 1 -->
+				<div class="col-md-4 ">
 			    	<div class="grid mask">
 						<figure>
-							
-							<%= image_tag("#{recueil.picture}", class: 'img-responsive')%>
+							<%= image_tag(asset_path('uruk/resilience.png'), class: 'img-responsive')%>
 							<figcaption>
-								<h5><%= recueil.title %></h5>
-								<a data-toggle="modal" href="/shop/products/<%= recueil.text %>" class="btn btn-primary btn-lg">En savoir plus</a>
+								<h5>HAINE</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">En savoir plus</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
-			<%end%>
+				
+				
+						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+						      
+						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Résilience</h4>
+						        </div>
+						        <div class="modal-body">
+						          
+						          <p>Le premier recueil vient d’une année marquée par une montée de la couverture médiatique de la haine et du sentiment de peur de l’autres. Sans nuance et bien souvent à chaud les discours n’ont fait que tendre vers les extrêmes. C’est pourquoi la ligne directrice du recueil fut la haine. Un concept lourd, un mot puissant, mais malheureusement sur-utilisé dans les médias.</br> La haine ne peut être le moteur d’une société diverse et épanoui. La seule façon de combattre la haine et avec plus d’humanité, noyer l’ennemie par la compassion et la compréhension. Par les écrits d’auteurs de tous les horizons face à la haine c’est une perspective de résilience que l’on amène. Vision ayant peu de place dans une culture médiatique centrée sur le divertissement au dépend de l’information.</p>
+						         <p><b><a href="/shop/products/resilience" target="blank">Acheter</a></b></p> 
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				
+				<!-- PORTFOLIO IMAGE 2 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<%= image_tag(asset_path('uruk/antigone.png'), class: 'img-responsive')%>
+							<figcaption>
+								<h5>JUSTICE</h5>
+								<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg">En savoir plus</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Antigone</h4>
+						        </div>
+						        <div class="modal-body">
+						          
+						          <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+						       <!--    <p><b><a href="#">Visit Site</a></b></p> -->
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				<!-- PORTFOLIO IMAGE 3 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<%= image_tag(asset_path('uruk/akrasia.png'), class: 'img-responsive')%>
+							<figcaption>
+								<h5>CONTROLE</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">En savoir plus</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Antigone</h4>
+						        </div>
+						        <div class="modal-body">
+						          
+						          <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+						          <!-- <p><b><a href="#">Visit Site</a></b></p> -->
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
 			</div><!-- /row -->
 			
 			<br>

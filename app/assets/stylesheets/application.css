@@ -14,7 +14,7 @@
  *= require_tree .
  */
 
-@import "bootstrap";
 @import "main";
+@import "bootstrap";
 @import "animate-custom";
-
+@import "iconmoon"

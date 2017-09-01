@@ -307,6 +307,10 @@ a:focus {
 figure {
   margin: 0;
 }
+  .logo {
+    background-color: white;
+    max-width: 50px;
+  }
 img {
   vertical-align: middle;
 }

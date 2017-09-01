@@ -14,7 +14,7 @@ Spree.config do |config|
   config.currency = "CAD"
 
   # from address for transactional emails
-  config.mails_from = "store@example.com"
+  config.mails_from = "leseditionsuruk@gmail.com"
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
@@ -28,7 +28,7 @@ Spree.config do |config|
   # Frontend:
 
   # Custom logo for the frontend
-  # config.logo = "logo/solidus_logo.png"
+   config.logo = "logo/solidus_logo.png"
 
   # Template to use when rendering layout
   # config.layout = "spree/layouts/spree_application"
@@ -55,13 +55,13 @@ end
 Spree::Frontend::Config.configure do |config|
   config.use_static_preferences!
 
-  config.locale = 'en'
+  config.locale = 'fr-ca'
 end
 
 Spree::Backend::Config.configure do |config|
   config.use_static_preferences!
 
-  config.locale = 'en'
+  config.locale = 'fr-ca'
 end
 
 Spree::Api::Config.configure do |config|

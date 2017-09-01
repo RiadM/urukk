@@ -30,13 +30,15 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'solidus_i18n', github: 'solidusio-contrib/solidus_i18n', branch: 'master'
+
 #Pour les images
 gem 'carrierwave',    '1.1.0'
 gem 'mini_magick',    '4.7.0'
 gem 'fog',            '1.40.0'
 
 
-gem 'bootstrap-sass', '~>3.2.0'
+gem 'bootstrap-sass', '~>3.3.6'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
@@ -52,6 +54,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
+  gem 'pry-rails'
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
 end

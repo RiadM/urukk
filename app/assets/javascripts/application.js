@@ -13,7 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap-sprockets
+//= require bootstrap
+//= require cable.js
+//= require jquery-func.js
+//= require jquery.easing.1.3.js
+//= require jquery.min.js
+//= require retina.js
+//= require interact.js
+//= require smoothscroll.js
 //= require_tree .
    $(document).ready(function(){
             //-- Click on detail
